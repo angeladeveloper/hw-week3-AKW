@@ -40,4 +40,4 @@ function writePassword() {
 
 ## Finished Application!
 
-![ Gif of app working](/passwordGeneratorGifs.gif)
+![ Gif of app working](/passwordgifColorChange.gif)
