@@ -36,4 +36,4 @@ function writePassword() {
 
 ## Finished Application!
 
-![ Gif of app working](/pwGenGif.gif)
+![ Gif of app working](/passwordGeneratorGifs.gif)
