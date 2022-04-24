@@ -34,6 +34,10 @@ function writePassword() {
 }
 ```
 
+## NEW BUTTON!
+
+-- I decided to add a new button to specifically reset the generator as well!
+
 ## Finished Application!
 
 ![ Gif of app working](/passwordGeneratorGifs.gif)
