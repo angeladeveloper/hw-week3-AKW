@@ -1,5 +1,6 @@
 // Assignment Code
 var generatedPassword = document.querySelector("#password");
+var resetPassword = document.querySelector("#reset");
 var generateBtn = document.querySelector("#generate");
 var lowerCaseValues = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -10,18 +11,6 @@ var newPassword = "";
 var workingPassword = "";
 var randomChar = Math.floor(Math.random() * workingPassword.length);
 
-// function howLong(){
-//     userLength = prompt("How many Characters? 8 - 128"); 
-//     if (userLength < 8 || userLength > 128) {
-//         alert('Please choose a valid number: 8 - 128');
-//         console.log('Please choose a valid number: 8 - 128');
-//         return;
-//     }else {
-//         generatePassword();
-//     }
-// }
-
-
 console.log('passwordlength:', userLength);
 
 
@@ -30,10 +19,7 @@ console.log(randomChar);
 
 function generatePassword(){
 // here I am reseting the password generator. 
-    if (generatedPassword.value === newPassword){
-        generatedPassword.value = " ";
-        newPassword = " ";
-    }
+    resetGenerator();
 
 // How many characters? 
     userLength = prompt("How many Characters? 8 - 128"); 
@@ -86,4 +72,12 @@ function  writePassword(){
 
 }
 }
+// here I am reseting the password generator. 
+function resetGenerator (){
+    if (generatedPassword.value === newPassword){
+        generatedPassword.value = " ";
+        newPassword = " ";
+    } 
+}
 
+resetPassword.addEventListener("click", resetGenerator);

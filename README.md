@@ -11,8 +11,29 @@
 - I ran into issues when try to figure out how to reset the generator. I solved the problem by calling this if statement at the begining of my generate password function. I am not sure if this is best practice, but it worked!
 
 ```js
-if (generatedPassword.value === newPassword) {
-  generatedPassword.value = " ";
-  newPassword = " ";
+// here I am reseting the password generator.
+function resetGenerator() {
+  if (generatedPassword.value === newPassword) {
+    generatedPassword.value = " ";
+    newPassword = " ";
+  }
 }
 ```
+
+- I approached the "randomness" of the password by making a very long sting that included all possible characters.
+
+```js
+function writePassword() {
+  generatePassword();
+  for (let i = 0; i < userLength; i++) {
+    var randomCharNum = Math.floor(Math.random() * workingPassword.length);
+    newPassword += workingPassword.charAt(randomCharNum);
+    console.log("New Password:", newPassword);
+    generatedPassword.value = newPassword;
+  }
+}
+```
+
+## Finished Application!
+
+![ Gif of app working](/pwGenGif.gif)

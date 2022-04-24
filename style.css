@@ -135,3 +135,12 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+.displayInline {
+    display: inline-block;
+    position: relative;
+}
+
+#reset {
+    left: 100px;
+}
